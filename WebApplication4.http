@@ -5,7 +5,9 @@
 GET {{url}}/Employees/
 Accept: application/json
 apI-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI4Iiwic2lkIjoiOCIsIm5hbWUiOiJhaG1lZCIsImZpcnN0TmFtZSI6ImFobWVkIiwibGFzdE5hbWUiOiJhbGkiLCJqdGkiOiJlYzdhNDdlNS1iNGY2LTRlNmItYjgwZi0xNjY1MjcwN2VlYmYiLCJyb2xlIjoiQWRtaW4iLCJleHAiOjE3MzA3MDk3MjEsImlzcyI6Ind3dy5hbHlhYXJpLmNvbSIsImF1ZCI6Ind3dy5hbHlhYXJpLmNvbSJ9.GItpCHx2-fWgCj2QB9p0Rz0zLFALMqxHc7Au3GmPP6Y
+Authorization: Bearer {{token}} 
+
+
 ###
 GET {{url}}/Employees/20
 Accept: application/json

@@ -1,0 +1,47 @@
+@url = http://localhost:5286/api
+
+@token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI2Iiwic2lkIjoiNiIsIm5hbWUiOiJhbHlhYXJpIiwiZmlyc3ROYW1lIjoi2YXYrdmF2K8iLCJqdGkiOiIxNDhlZDM4YS00ZGI5LTQwY2UtOTVjOC1jNjBmMDNiMjJlN2MiLCJyb2xlIjoiVmlzaXRvciIsImV4cCI6MTczMDcwODE5OCwiaXNzIjoid3d3LmFseWFhcmkuY29tIiwiYXVkIjoid3d3LmFseWFhcmkuY29tIn0.aJTer3lp7qjv4KDd6asWnjhefNzxnoI8i7uSfilJFpQ
+
+GET {{url}}/Employees/
+Accept: application/json
+apI-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI4Iiwic2lkIjoiOCIsIm5hbWUiOiJhaG1lZCIsImZpcnN0TmFtZSI6ImFobWVkIiwibGFzdE5hbWUiOiJhbGkiLCJqdGkiOiJlYzdhNDdlNS1iNGY2LTRlNmItYjgwZi0xNjY1MjcwN2VlYmYiLCJyb2xlIjoiQWRtaW4iLCJleHAiOjE3MzA3MDk3MjEsImlzcyI6Ind3dy5hbHlhYXJpLmNvbSIsImF1ZCI6Ind3dy5hbHlhYXJpLmNvbSJ9.GItpCHx2-fWgCj2QB9p0Rz0zLFALMqxHc7Au3GmPP6Y
+###
+GET {{url}}/Employees/20
+Accept: application/json
+
+
+###
+POST {{url}}/Employees
+Content-Type:application/json
+
+{
+   
+    "name": "Ahamed Alyaari2",
+    "phone": "7777232",
+    "email": "Alyaari2@gmail.com"
+}
+ 
+###
+POST {{url}}/account/register
+Content-Type:application/json
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+ 
+{
+  "firstName": "ahmed",
+  "lastName": "ali",
+  "userName": "ahmed",
+  "email": "ahmed@g.com",
+  "password": "123456",
+  "confirmPassword": "123456",
+  "isAdmin": true
+}
+
+###
+POST {{url}}/account/login
+Content-Type:application/json
+
+{
+  "userName": "ahmed",
+  "password": "123456"
+}
